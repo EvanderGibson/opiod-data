@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    
+
+<head>
+  <title>About the Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+
+  
+
+<div class="container-fluid mt-3">
+  <h3>About the data set</h3>
+  <p>This data set contains record for deaths due to opioids of four classes
+  , prescription, syntehtic, herion, cocaine. As well deaths by specific sex
+  and race. This data range is from 1999-2019. The data used is this web app is 
+  from the CORGIS Dataset Project and can be found <a href="https://corgis-edu.github.io/corgis/json/">here.</a></p>
+  <p>An example of one of the statistics reported each year is deaths due to 
+  synthetic opioids. A synthetic opioid is any opioid synthesized in a lab.
+  for example fentanyl is a synthetic opioid.(
+  <a href="https://www.dea.gov/factsheets/synthetic-opioids#:~:text=Some%20synthetic%20opioids%2C%20such%20as,been%20approved%20for%20medical%20use.">source</a>)</p>
+  
+</div>
+
+</body>
+
+{% endblock %}
