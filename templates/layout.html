@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  {% block heading %} {%endblock%}
   <title>{% block title %}{% endblock %} - My Webpage</title>
   
   </head>
@@ -28,10 +29,10 @@
               <a {% if active_page == "home" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/">About</a>
             </li>
             <li class="nav-item">
-              <a {% if active_page == "page1" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/p1">Page 1</a>
+              <a {% if active_page == "map" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/map">Map</a>
             </li>
             <li class="nav-item">
-              <a {% if active_page == "page2" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/p2">Page 2</a>
+              <a {% if active_page == "states" %} class="nav-link active"{% else %}class="nav-link"{% endif %} href="/states">States</a>
             </li>
           </ul>
         </div>
