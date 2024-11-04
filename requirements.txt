@@ -7,3 +7,4 @@ wheel
 gunicorn
 bokeh
 numpy
+bokeh_sampledata
